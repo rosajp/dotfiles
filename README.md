@@ -2,24 +2,49 @@
 
 Stolen from all around the web :) Thanks Internet! ❤️
 
+This will:
+
+- Set and create some folders
+- Setup ad-blocking hosts (if you want)
+- Setup Github for your account
+- Install Homebrew
+- Install software via [Homebrew bundle](./Brewfile)
+- Set Z-Shell as the default user login shell
+- Use [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) shell framework
+- Set `powerlevel9k` theme (but you can pick yours from https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
+- Install PowerLine fonts to be able to have icons in the terminal prompt
+- Install useful key bindings and fuzzy completion
+- Alias user's home dotfiles to the ones in this repo
+- Setup VIM and set it as default terminal editor
+- Install NVM from the source
+- Install current `lts` node version as the default node
+- Configure node to always install dependencies in exact versions
+- Adjust the system (if accepted) in 2 levels:
+  - the [general adjustments](./lib_sh/system_adjustments_general.sh)
+  - the [opinionated adjustments](`./lib_sh/system_adjustments_opinionated.sh`)
+
 ## Proceeding
 
 ### Preparation
 
-Fork this repo, then:
+Fork this repo, then clone it and do the following:
 
-- Configure your installation variables in `config/installation.sh`
-- Configure your ZSH variables in `lib_zsh/frontend.zsh` (Config vars section)
-- Configure your system adjustments in `lib_sh/system_adjustments_opinionated.sh`
-- Go through `install.sh` and `lib_sh/system_adjustments_general.sh` and adapt it in case you don't like something
-- Adapt the software you use with the `Brewfile`
-- Add this repo as an upstream and use it from now on for your installs
+- Configure your installation variables in [`./config/installation.sh`](./config/installation.sh)
+- Configure your ZSH variables in [`./lib_zsh/frontend.zsh`](./lib_zsh/frontend.zsh) (Config vars section)
+- Configure your system adjustments in [`lib_sh/system_adjustments_opinionated.sh`](lib_sh/system_adjustments_opinionated.sh)
+- Go through [`./install.sh`](./install.sh) and [`./lib_sh/system_adjustments_general.sh`](./lib_sh/system_adjustments_general.sh) and adapt it in case you don't like something
+- Adapt the software you use with the [`./Brewfile`](./Brewfile)
+- Add this repo as an upstream (to get the updates from this repo) and use your fork from now on for your installs
 
-You can also clone this repo in your "old" machine, then in the folder where this was cloned run the following in order to get the last state of your installed apps:
+You can also clone your forked repo in your "old" machine, then in the folder where this was cloned run the following in order to get the last state of your installed apps:
 
-`brew bundle dump --describe --force`
+```bash
+brew bundle dump --describe --force
+```
 
-This 👆will update the `Brewfile` with your current installed apps (9)if installed using Brew). Notice that this also requires you to have Homebrew and MAS installed (which you eventually have if you also run this in your old machine, back in the day you got it 😉).
+This 👆will update the `Brewfile` with your current installed apps (if installed using Brew). Notice that this also requires you to have Homebrew and MAS installed (which you eventually already have if you also run this in your old machine, back in the day you got it 😉).
+
+#### Disclaimer
 
 > You should always review arbitrary code from the internet before running it on your machine with sudo power!
 > You are responsible for everything this script does to your machine (see LICENSE)
@@ -34,7 +59,7 @@ git clone --recurse-submodules https://git.unic.com/scm/budc/frontend-dotfiles.g
 
 When it finishes reboot the system when the prompt requires so. After the reboot you may see a message like the following in the terminal:
 
-If you see this message 👇 type `y` and `enter`. If not ignore this and go on.
+If you see this message 👇 type `y` and hit `enter`. If not ignore this and go on.
 
 ```bash
 zsh compinit: insecure directories, run compaudit for list.
@@ -45,7 +70,7 @@ Ignore insecure directories and continue [y] or abort compinit [n]?
 
 ### Finalization
 
-When it finishes, open iTerm or terminal and:
+When it finishes, open Terminal (or iTerm) and:
 
 1. press `Command + ,` to open preferences.
 1. Under Profiles > Colors, select "Load Presets" and choose the theme scheme defined in `instal.sh`. If it isn't there for some reason, import it from `~/.dotfiles/configs`

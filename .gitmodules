@@ -7,3 +7,6 @@
 [submodule "homedir/.vim/bundle/Vundle.vim"]
 	path = homedir/.vim/bundle/Vundle.vim
 	url = git://github.com/VundleVim/Vundle.vim.git
+[submodule "Vundle.vim"]
+	path = Vundle.vim
+	url = git://github.com/VundleVim/Vundle.vim.git

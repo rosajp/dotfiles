@@ -47,6 +47,7 @@
   safecrlf = warn
   # prevent crlf (then you will have to deal with the problem -- dos2unix, etc)
   #safecrlf = true
+  editor = code
   editor = vim
   #editor = subl -w
 
@@ -151,7 +152,7 @@
   sno = show --name-only
   logsimple = log --graph --abbrev-commit --pretty=oneline --all --decorate
 [apply]
-  whitespace = nowarn
+  #whitespace = nowarn
 
 [rerere]
   #Enable the recording of resolved conflicts, so that identical hunks can be resolved automatically later on

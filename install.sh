@@ -249,7 +249,7 @@ ok
 running "installing fonts"
 ./fonts/install.sh
 running "installing PowerLine fonts"
-$tools_dir/powerline-fonts/install.s
+$tools_dir/powerline-fonts/install.sh
 ok
 
 running "activating zsh-completions"

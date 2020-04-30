@@ -33,7 +33,7 @@ export ZSH_THEME="powerlevel10k/powerlevel10k"
 # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context node_version dir vcs nvm)
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(node_version dir vcs nvm)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(disk_usage ram status time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status disk_usage ram time)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(disk_usage load status history time node_version rbenv)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 

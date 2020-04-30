@@ -5,8 +5,12 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Search tool like grep, but optimized for programmers
 brew "ack"
+# Shell extension to jump to frequently used directories
+brew "autojump"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Identify or delete duplicate files
 brew "fdupes"
 # Command-line fuzzy finder written in Go

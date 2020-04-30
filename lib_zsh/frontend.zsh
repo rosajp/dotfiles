@@ -26,13 +26,15 @@ export ZSH_THEME="powerlevel10k/powerlevel10k"
 #### Configure Theme
 
 # POWERLEVEL9K_MODE='awesome-patched'
-POWERLEVEL9K_MODE='awesome-fontconfig'
+# POWERLEVEL9K_MODE='awesome-fontconfig'
 
 # ELEMENTS can be, among others: status, os_icon, load, context, dir, context, dir, rbenv, vcs
 # https://github.com/bhilburn/powerlevel9k#customizing-prompt-segments
 # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs nvm)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(disk_usage load status history time node_version rbenv)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context node_version dir vcs nvm)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(node_version dir vcs nvm)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(disk_usage ram status time)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(disk_usage load status history time node_version rbenv)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 ####
@@ -101,9 +103,9 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
 local p='%F{%(?.green.red)}${${${KEYMAP:-0}:#vicmd}:+❯}${${$((!${#${KEYMAP:-0}:#vicmd})):#0}:+❮}%f '
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="$p"
 
-POWERLEVEL9K_NVM_BACKGROUND=none
-POWERLEVEL9K_NVM_FOREGROUND=green
-POWERLEVEL9K_NODE_ICON='%fvia %F{green}⬢'
+# POWERLEVEL9K_NVM_BACKGROUND=none
+# POWERLEVEL9K_NVM_FOREGROUND=green
+POWERLEVEL9K_NODE_ICON='%fvia %F{white}⬢'
 
 # colorcode test
 # for code ({000..255}) print -P -- "$code: %F{$code}This is how your text would look like%f"

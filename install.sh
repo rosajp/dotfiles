@@ -259,6 +259,14 @@ sudo chmod -R 755 /usr/local/share
 rm -f ~/.zcompdump; compinit
 ok
 
+running "adding zsh-autosuggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+ok
+
+running "adding zsh-highlighting"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+ok
+
 running "making sure ZSH is up to date"
 # the same than calling 'upgrade_oh_my_zsh' in a ZSH environment
 env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh

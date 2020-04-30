@@ -1,8 +1,15 @@
+# This sets up colors properly
+export TERM="xterm-256color"
+
+# set shell
+export SHELL=/bin/zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+source ~/.profile
+
 # Path to your oh-my-zsh installation.
-# export ZSH="/Users/otorrentf/.oh-my-zsh"
 export ZSH=$HOME/.dotfiles/oh-my-zsh
 
 # Uncomment the following line to use case-sensitive completion.
@@ -22,18 +29,18 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
+# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -42,6 +49,7 @@ DISABLE_AUTO_TITLE="true"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -62,7 +70,9 @@ plugins=(
 	dircycle
 	dirhistory
 	dirpersist
+  dnf
 	docker
+  docker-compose
 	git
 	git-extras
 	git-flow

@@ -211,6 +211,7 @@ ok
 
 ###############################################################################
 # ZSH
+# Theme PowerLevel10 installed via Homebrew in Brewfile
 ###############################################################################
 
 bot "setting zsh as the user login shell"
@@ -228,11 +229,11 @@ action "cp lib_zsh/*.zsh oh-my-zsh/custom"
 cp lib_zsh/*.zsh oh-my-zsh/custom
 ok
 
-running "installing powerLevel10k theme"
-if [[ ! -d "./oh-my-zsh/custom/themes/powerlevel10k" ]]; then
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
-fi
-ok
+# running "installing powerLevel10k theme"
+# if [[ ! -d "./oh-my-zsh/custom/themes/powerlevel10k" ]]; then
+# 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+# fi
+# ok
 
 running "installing Nerd fonts"
 # https://github.com/ryanoasis/nerd-fonts

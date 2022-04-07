@@ -85,7 +85,6 @@ plugins=(
 	git-flow-avh
 	git-prompt
 	github
-	gulp
 	history
 	node
 	npm

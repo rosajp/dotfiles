@@ -313,11 +313,11 @@ popd > /dev/null 2>&1
 # VIM
 ###############################################################################
 
-bot "installing vim plugins"
-# cmake is required to compile vim bundle YouCompleteMe
-# require_brew cmake
-vim +PluginInstall +qall > /dev/null 2>&1
-ok
+#bot "installing vim plugins"
+## cmake is required to compile vim bundle YouCompleteMe
+## require_brew cmake
+#vim +PluginInstall +qall > /dev/null 2>&1
+#ok
 
 
 ###############################################################################

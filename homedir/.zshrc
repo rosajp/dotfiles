@@ -94,9 +94,8 @@ plugins=(
 	web-search
 	yarn
 	zsh-autosuggestions
-	zsh_reload
-	# zsh-syntax-highlighting
 	zsh-z
+	zsh-syntax-highlighting
 )
 
 if type brew &>/dev/null; then

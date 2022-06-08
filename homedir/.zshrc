@@ -107,7 +107,7 @@ fi
 
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/Cellar/powerlevel10k/1.16.1/powerlevel10k.zsh-theme
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -172,4 +172,4 @@ unsetopt correct
 [[ ! -f ~/.dotfiles/homedir/.p10k.zsh ]] || source ~/.dotfiles/homedir/.p10k.zsh
 
 # zsh-syntax-highlighting must be sourced at the end
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/Cellar/zsh-syntax-highlighting/0.7.1/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

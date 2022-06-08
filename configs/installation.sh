@@ -10,9 +10,9 @@ bin_dir="/usr/local/bin"
 TERMINAL_THEME="FrontEndDelight"
 
 # Set the desired text to be displayed in Login window
-LOGIN_WINDOW_TEXT="This computer belongs to Unic AG, please call +41 44 560 12 12"
+LOGIN_WINDOW_TEXT="This computer belongs to Rosa JP, please call +41 76 245 07 78"
 
 # Set the latest NVM version by checking https://github.com/creationix/nvm/releases
-nvm_latest_version="0.35.3"
+nvm_latest_version="0.39.1"
 
 ZSH_CUSTOM="$HOME/.dotfiles/oh-my-zsh/custom"

@@ -1,8 +1,8 @@
 ############################################################################
 #### Config vars
 
-USERNAME=YOUR_UNIC_USERNAME
-JIRA=https://jira.unic.com
+USERNAME=YOUR_USERNAME
+JIRA=https://jira.com
 JIRAPREFIX=JIRA-
 EDITOR=code
 

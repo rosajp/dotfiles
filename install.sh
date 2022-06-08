@@ -172,7 +172,7 @@ running "checking homebrew install"
 brew_bin=$(which brew) 2>&1 > /dev/null
 if [[ $? != 0 ]]; then
 	action "installing homebrew"
-		# Fix error from homebre that cannot install if /usr/local doesn't belong to the current user, like in Unic's case
+		# Fix error from homebre that cannot install if /usr/local doesn't belong to the current user
 		sudo chown -R $USER /usr/local
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 		if [[ $? != 0 ]]; then
